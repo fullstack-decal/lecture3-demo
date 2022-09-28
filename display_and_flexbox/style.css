@@ -1,0 +1,109 @@
+.box-container {
+    /* left: 10px; */
+    /* padding: 30px; */
+    text-align: center;
+    height: 300px;
+    width: 150px;
+    color: white;
+    font-size: 20px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.box {
+    height: 100px;
+    width: 150px;
+}
+
+
+/* -----------------------Positioning----------------------- */
+/* 
+    static: default
+    relative: relative to the default position
+    fixed: relative to the browser window
+    abosolute: relative the the (positioned) parent, no space tke in the page
+*/
+.box-one {
+    background-color: blue;
+    position: absolute;
+    top: 170px;
+}
+.box-two {
+    background-color: green;
+    position: relative;
+    left: 100px;
+    right: 100px;
+    top: 15px;
+
+    /* position: sticky;
+    top: 20px; */
+}
+.box-three {
+    background-color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0px;
+}
+
+
+/* -----------------------Inline vs Block----------------------- */
+span {
+    color: red;
+    /* display: inline; */
+    display: block;
+}
+
+
+/* -----------------------Grid----------------------- */
+.grid-container {
+    display: grid;
+    width: 30%;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0,0,0,0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.grid-item-big {
+    grid-column-start: 2; /* start from this line */
+    grid-column-end: 4;   /* end at this line */
+}
+
+/* -----------------------Flex Box----------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    background-color:cadetblue;
+    padding: 5px;
+}
+.nav-item {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.flexbox {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color:cadetblue;
+    padding: 5px;
+}
+.item {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+    border-color: aqua;
+    border-style: solid;
+}
+#item-big {
+    flex-grow: 2;
+}
